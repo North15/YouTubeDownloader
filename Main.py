@@ -175,12 +175,12 @@ class YoutubeDownloaderApp(QMainWindow):
                 'preferredcodec': 'mp3',
                 'preferredquality': '192',
             }],
-            'ffmpeg_location': 'C:\ProgramData\chocolatey\lib\\ffmpeg\\tools\\ffmpeg\\bin',
+            'ffmpeg_location': 'ffmpeg\\bin',
             'yesplaylist': True,
         } if download_option == "Audio" else {
             'format': 'best',
             'outtmpl': f'{output_folder}/%(title)s.%(ext)s',
-            'ffmpeg_location': 'C:\ProgramData\chocolatey\lib\\ffmpeg\\tools\\ffmpeg\\bin',
+            'ffmpeg_location': 'ffmpeg\\bin',
             'yesplaylist': True,
         }
 
